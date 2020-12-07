@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="uzduotis.css">
+    <title>Puslapis</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div id="box1" class="spalvos-box"></div>
+            <button type="button"
+                onclick='document.getElementById("keisti-pastraipa").innerHTML = "Pakeistas tekstas"'>Įjungti</button>
+            <button type="button"
+                onclick='document.getElementById("keisti-pastraipa").innerHTML = "Šią pastraipę reikės pakeisti su JavaScriptu"'>Išjungti</button>
+
+        </div>
+
+        <div class="box">
+            <div id="box2" class="spalvos-box"></div>
+            <button id="buttis" type="button"
+                onclick='document.getElementById("buttis").style.width="50%"'>Įjungti</button>
+
+            <button id="buttis" type="button"
+                onclick='document.getElementById("buttis").style.width="100%"'>Išjungti</button>
+
+        </div>
+
+        <div class="box">
+            <div id="box3" class="spalvos-box"></div>
+            <button type="button"
+                onclick="document.getElementById('keisti-pastraipa').style.display='none'">Įjungti!</button>
+
+            <button type="button"
+                onclick="document.getElementById('keisti-pastraipa').style.display='initial'">Išjungti!</button>
+        </div>
+
+        <div class="box">
+            <div id="box4" class="spalvos-box"></div>
+            <button type="button"
+                onclick="document.getElementById('box1, box9') .style.display='none'">Išjungti!</button>
+
+            <button type="button" onclick="keistiVisusSpan('keisti-pastraipa', 'box4')">Įjungti</button>
+
+        </div>
+
+        <div class="box">
+            <div id="box5" class="spalvos-box"></div>
+            <button type="button" onclick="pasleptiMygtukus('keisti-pastraipa', 'box5')">Įjungti</button>
+
+            <button type="button" onclick="grazintiMygtukus('keisti-pastraipa', 'box5')">Išjungti</button>
+        </div>
+
+        <div class="box">
+            <div id="box6" class="spalvos-box"></div>
+            <button id="mygtukas6" type="button" onclick="pakeistiMygtukoTeksta('mygtukas6', 'box6')">Įjungti</button>
+
+            <button type="button" onclick="grazintiMygtukoTeksta('mygtukas6', 'box6')">Išjungti</button>
+        </div>
+
+        <div class="box">
+            <div id="box7" class="spalvos-box"></div>
+            <button type="button" onclick="pridetiTeksta('keisti-pastraipa', 'box7')">Įjungti</button>
+
+            <button type="button" onclick="grazintiPridetaTeksta('keisti-pastraipa', 'box7')">Išjungti</button>
+        </div>
+
+        <div class="box">
+            <div id="box8" class="spalvos-box"></div>
+            <button type="button" onclick="padidintiPastraiposDydi('keisti-pastraipa', 'box8')">Įjungti</button>
+
+            <button type="button" onclick="grazintiPastraiposDydi('keisti-pastraipa', 'box8')">Išjungti</button>
+        </div>
+
+        <div class="box">
+            <div id="box9" class="spalvos-box"></div>
+            <button type="button" onclick="pastraiposParametrai('keisti-pastraipa', 'box9')">Įjungti</button>
+
+            <button type="button" onclick="grazintiPastraiposParametrus('keisti-pastraipa', 'box9')">Išjungti</button>
+        </div>
+
+        <div class="box">
+            <div class="spalvos-box"></div>
+            <button type="button" onclick="trintViska()">Įjungti</button>
+
+            <button>Išjungti</button>
+        </div>
+    </div>
+
+    <br><br>
+    <p id="keisti-pastraipa">Šią pastraipę <span>reikės</span> pakeisti su <span>JavaScriptu</span></p>
+
+</body>
+
+</html>
